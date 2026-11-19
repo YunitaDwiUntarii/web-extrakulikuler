@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ekstrakurikuler SMK Negeri 1 Tengaran</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E✨%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"><span></span><span></span></div>
+
+  <div class="page">
+    <nav class="nav" aria-label="Navigasi utama">
+      <div class="brand"><b>S1</b><span>SMKN 1 Tengaran<small>Ekstrakurikuler</small></span></div>
+      <div class="nav-links"><a href="#ekskul">Ekskul</a><a href="#daftar">Daftar</a></div>
+    </nav>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">SMK Negeri 1 Tengaran · Kab. Semarang</p>
+      <h1>Temukan <em>minat</em> &amp; bakatmu di luar kelas</h1>
+      <p class="lead">Dari lapangan sampai panggung — pilih ekstrakurikuler yang membuat harimu di sekolah lebih berwarna.</p>
+      <div class="cta">
+        <a class="btn" href="#ekskul">Jelajahi Ekskul <span aria-hidden="true">→</span></a>
+        <a class="btn ghost" href="#daftar">Daftar Sekarang</a>
+      </div>
+      <div class="stats"><div><b>15</b><span>Ekstrakurikuler</span></div><div><b>4</b><span>Bidang minat</span></div></div>
+    </section>
+
+    <section class="ekskul" id="ekskul" aria-labelledby="judulEkskul">
+      <p class="eyebrow">Ekstrakurikuler</p>
+      <h2 id="judulEkskul">Pilih <em>jalurmu</em></h2>
+      <div class="chips" id="chips" role="group" aria-label="Filter bidang"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <div class="signup" id="daftar">
+    <section class="card" id="card" aria-labelledby="judul">
+      <header class="card-head" id="cardHead">
+        <p class="eyebrow">Pendaftaran Anggota Baru</p>
+        <h2 id="judul">Bergabung &amp; <em>berkarya</em> bersama kami</h2>
+        <p class="lead">Lengkapi data berikut untuk menjadi bagian dari keluarga besar ekstrakurikuler sekolah.</p>
+      </header>
+
+      <form id="regForm" novalidate>
+        <div class="field" data-field="nama">
+          <label for="nama">Nama Lengkap</label>
+          <div class="control">
+            <input type="text" id="nama" name="nama" placeholder="Contoh: Budi Santoso" autocomplete="name" aria-describedby="nama-msg">
+          </div>
+          <p class="msg" id="nama-msg" role="alert"></p>
+        </div>
+
+        <div class="field" data-field="email">
+          <label for="email">Email</label>
+          <div class="control">
+            <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" aria-describedby="email-msg">
+          </div>
+          <p class="msg" id="email-msg" role="alert"></p>
+        </div>
+
+        <div class="row">
+          <div class="field" data-field="password">
+            <label for="password">Password</label>
+            <div class="control has-toggle">
+              <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" autocomplete="new-password" aria-describedby="password-msg">
+              <button type="button" class="toggle" data-toggle="password" aria-pressed="false">Lihat</button>
+            </div>
+            <p class="msg" id="password-msg" role="alert"></p>
+            <div class="meter" id="meter" data-level="0" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <p class="meter-text" id="meterText"></p>
+          </div>
+
+          <div class="field" data-field="konfirmasi">
+            <label for="konfirmasi">Konfirmasi Password</label>
+            <div class="control has-toggle">
+              <input type="password" id="konfirmasi" name="konfirmasi" placeholder="Ulangi password" autocomplete="new-password" aria-describedby="konfirmasi-msg">
+              <button type="button" class="toggle" data-toggle="konfirmasi" aria-pressed="false">Lihat</button>
+            </div>
+            <p class="msg" id="konfirmasi-msg" role="alert"></p>
+          </div>
+        </div>
+
+        <div class="field" data-field="ekskul">
+          <label for="ekskul">Pilihan Ekstrakurikuler</label>
+          <div class="control has-select">
+            <select id="ekskul" name="ekskul" aria-describedby="ekskul-msg">
+              <option value="">Pilih salah satu…</option>
+              <option>Paskibra</option>
+              <option>Pramuka</option>
+              <option>PMR (Palang Merah Remaja)</option>
+              <option>Jepun</option>
+              <option>Silat (Pencak Silat)</option>
+              <option>Foster</option>
+              <option>Voli</option>
+              <option>Futsal</option>
+              <option>Jurnalis</option>
+              <option>MTQ (Musabaqah Tilawatil Qur’an)</option>
+              <option>Rebana</option>
+              <option>Rohis (Rohani Islam)</option>
+              <option>Padus (Paduan Suara)</option>
+              <option>Drumband</option>
+              <option>Tari</option>
+            </select>
+          </div>
+          <p class="msg" id="ekskul-msg" role="alert"></p>
+        </div>
+
+        <button type="submit" class="btn">Daftar Sekarang <span aria-hidden="true">→</span></button>
+      </form>
+
+      <div class="success" id="success" hidden>
+        <div class="check" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M14 27l8 8 16-17"/></svg></div>
+        <h2 tabindex="-1" id="successTitle">Pendaftaran Berhasil!</h2>
+        <p class="lead">Selamat bergabung, <strong id="sName"></strong>. Kami telah mencatat pendaftaranmu.</p>
+        <dl>
+          <div><dt>Ekstrakurikuler</dt><dd id="sEkskul"></dd></div>
+          <div><dt>Email</dt><dd id="sEmail"></dd></div>
+        </dl>
+        <button type="button" class="btn ghost" id="again">Daftarkan anggota lain</button>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <p>SMK Negeri 1 Tengaran · Jl. Darun Na’im, Karangduren, Tengaran, Kab. Semarang</p>
+    <p>LKPD 6 · PBTGM · Kelas XI — Validasi Form Interaktif &amp; Responsif Layout</p>
+  </footer>
+  </div>
+
+  <dialog id="detail" aria-labelledby="dTitle">
+    <button type="button" class="close" id="dClose" aria-label="Tutup">✕</button>
+    <span class="ico" id="dIco" aria-hidden="true"></span>
+    <span class="tag" id="dTag"></span>
+    <h3 id="dTitle"></h3>
+    <h4>Untuk apa ekskul ini?</h4>
+    <p id="dUntuk"></p>
+    <h4>Isi kegiatannya</h4>
+    <ul id="dGiat"></ul>
+    <p class="cocok" id="dCocok"></p>
+    <button type="button" class="btn" id="dDaftar">Daftar ekskul ini →</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
